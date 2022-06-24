@@ -21,6 +21,6 @@ class AddComplex{
 		System.out.println("2nd real number = " + real2);
 		System.out.println("2nd imaginary number = " + img2);
 		
-		System.out.println("Addition of complex numbers = " + (real1+real2) + "+" + (img1+img2)+"i");
+		System.out.println("Addition of complex numbers = " + (real1+real2) + "+" + (img1+img2)+"i"); //adding and concatinating the output
 	}
 }
