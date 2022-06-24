@@ -12,8 +12,8 @@ class MultTwoNums{
 		
 		//output
 		System.out.println("Multiplication of Two Numbers");
-		System.out.println("1st number = " + a);
-		System.out.println("2nd number = " + b);
-		System.out.println("Multiplication of a and b = " + (a*b) );
+		System.out.println("1st number = " + a); //showing the 1st number
+		System.out.println("2nd number = " + b); //showing the 2nd number
+		System.out.println("Multiplication of a and b = " + (a*b) ); //multiplying and concatinating the output
 	}
 }
