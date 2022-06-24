@@ -11,8 +11,8 @@ class AddTwoNums{
 		
 		//output
 		System.out.println("Adding Two Numbers");
-		System.out.println("1st number = " + a);
-		System.out.println("2nd number = " + b);
-		System.out.println("Addition of a and b = " + (a+b) );
+		System.out.println("1st number = " + a); // showing 1st number
+		System.out.println("2nd number = " + b); // showing 2nd number
+		System.out.println("Addition of a and b = " + (a+b) ); //adding and concatinating the output
 	}
 }
