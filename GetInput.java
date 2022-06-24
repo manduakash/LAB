@@ -9,10 +9,10 @@ class GetInput{
 		
 		Scanner scan = new Scanner(System.in); //using a standard input stream
 		System.out.println("Type your name...");
-		String name = scan.nextLine(); //taking input from user
+		String name = scan.nextLine(); //taking input from user and stroing in name
 		
 		
 		//output
-		System.out.println("Have a nice day " + name);
+		System.out.println("Have a nice day " + name); //concatinating the message with name variable
 	}
 }
