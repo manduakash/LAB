@@ -1,18 +1,22 @@
-/*
-@Author Akash Singh
-*/
-
+//@Author Akash Singh
 //Java Program to Add Two Numbers
 
+import javax.swing.*; // importing packages for GUI dialog boxes
+
 class AddTwoNums{
-	public static void main(String args[]){
-		int a = 5; //1st number
-		int b = 10; //2nd number
+	//main method
+	public static void main(String[] args) {
+		
+		JFrame jFrame = new JFrame(); //using jFrame class for GUI dialog boxes
+	
+		String a = JOptionPane.showInputDialog(jFrame,"Type 1st number for Addition"); //taking input from user
+		String b = JOptionPane.showInputDialog(jFrame, "Type 2nd number for Addition"); //taking input from user
+		
+		//changing data type
+		int a_Int = Integer.parseInt(a);
+		int b_Int = Integer.parseInt(b);
 		
 		//output
-		System.out.println("Adding Two Numbers");
-		System.out.println("1st number = " + a); // showing 1st number
-		System.out.println("2nd number = " + b); // showing 2nd number
-		System.out.println("Addition of a and b = " + (a+b) ); //adding and concatinating the output
-	}
+		JOptionPane.showMessageDialog(jFrame,"Additon of " +a+ " and " +b+ " = " + (a_Int+b_Int));
+  }
 }
