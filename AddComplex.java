@@ -25,6 +25,6 @@ class AddComplex{
 		int img2_Int = Integer.parseInt(img2);
 		
 		//output
-		JOptionPane.showMessageDialog(jFrame, "Addition of complex numbers = " + (real1_Int + real2_Int) + "+" + (img1_Int + img2_Int)+"i");
+		JOptionPane.showMessageDialog(jFrame, "Addition of complex numbers = " + (real1_Int + real2_Int) + " + " + (img1_Int + img2_Int)+" i ");
 	}
 }
