@@ -1,19 +1,25 @@
 /*
 @Author Akash Singh
 */
+//JAVA PROGRAM TO MULTIPLY TWO NUMBERS
 
-//Java Program to Multiply Two Numbers
+import javax.swing.*; //importing package for GUI dialog boxes
 
 class MultTwoNums{
+	//main method
 	public static void main(String args[]){
 		
-		int a = 5; //1st number
-		int b = 10; //2nd number
+		JFrame jFrame = new JFrame(); // using Jframe class for GUI dialogs
+		
+		//taking inputs from user
+		String a = JOptionPane.showInputDialog(jFrame,"Type the 1st number for Multiplication");
+		String b = JOptionPane.showInputDialog(jFrame,"Type the 2nd number for Multiplication");
+		
+		//changing data type of inputs
+		int a_Int = Integer.parseInt(a);
+		int b_Int = Integer.parseInt(b);
 		
 		//output
-		System.out.println("Multiplication of Two Numbers");
-		System.out.println("1st number = " + a); //showing the 1st number
-		System.out.println("2nd number = " + b); //showing the 2nd number
-		System.out.println("Multiplication of a and b = " + (a*b) ); //multiplying and concatinating the output
+		JOptionPane.showMessageDialog(jFrame,"Multiplication of "+ a + " and "+ b +" = " + (a_Int*b_Int));
 	}
 }
