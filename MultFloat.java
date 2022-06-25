@@ -1,18 +1,25 @@
 /*
 @Author Akash Singh
 */
+//JAVA PROGRAM TO MULTIPLY TWO FLOATING-POINT NUMBERS
 
-//Java Program to Multiply Two Floating-Point Numbers
+import javax.swing.*; //importing package for GUI dialog boxes
 
 class MultFloat{
+	//main method
 	public static void main(String args[]){
-		float a = 0.5f; //1st float number
-		float b = 0.3f; //2nd float number
+		
+		JFrame jFrame = new JFrame(); // using Jframe class for GUI dialogs
+		
+		//taking inputs from user
+		String a = JOptionPane.showInputDialog(jFrame,"Type the 1st floating number for Multiplication");
+		String b = JOptionPane.showInputDialog(jFrame,"Type the 2nd floating number for Multiplication");
+		
+		//changing data type of inputs
+		float a_float = Float.parseFloat(a);
+		float b_float = Float.parseFloat(b);
 		
 		//output
-		System.out.println("Multiply Two Floating-Point Numbers");
-		System.out.println("1st number = " + a);
-		System.out.println("2nd number = " + b);
-		System.out.println("Multiplication of a and b = " + a*b );
+		JOptionPane.showMessageDialog(jFrame,"Multiplication of "+ a + " and "+ b +" = " + (a_float*b_float));
 	}
 }
