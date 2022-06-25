@@ -4,23 +4,27 @@
 
 //Java Program to add two complex numbers
 
+import javax.swing.*;
+
+
 class AddComplex{
 	public static void main(String args[]){
 		
-		int real1 = 2; //1st real number
-		int img1= 5; //1st imaginary number
+		JFrame jFrame = new JFrame(); //using jframe class for dialog box
 		
-		int real2 = 7; //2nd real number
-		int img2 = 3; //2nd imaginary number
+		//taking input from user
+		String real1 = JOptionPane.showInputDialog(jFrame,"Enter Real number of your 1st complex number!");
+		String img1 = JOptionPane.showInputDialog(jFrame,"Enter Imaginary number of your 1st complex number!");
+		String real2 = JOptionPane.showInputDialog(jFrame,"Enter Real number of your 1st complex number!");
+		String img2 = JOptionPane.showInputDialog(jFrame,"Enter Imaginary number of your 1st complex number!");
+		
+		//changing data types
+		int real1_Int = Integer.parseInt(real1);
+		int img1_Int = Integer.parseInt(img1);
+		int real2_Int = Integer.parseInt(real2);
+		int img2_Int = Integer.parseInt(img2);
 		
 		//output
-		System.out.println("Addition of two complex numbers");
-		
-		System.out.println("1st real number = " + real1);
-		System.out.println("1st imaginary number = " + img1);
-		System.out.println("2nd real number = " + real2);
-		System.out.println("2nd imaginary number = " + img2);
-		
-		System.out.println("Addition of complex numbers = " + (real1+real2) + "+" + (img1+img2)+"i"); //adding and concatinating the output
+		JOptionPane.showMessageDialog(jFrame, "Addition of complex numbers = " + (real1_Int + real2_Int) + "+" + (img1_Int + img2_Int)+"i");
 	}
 }
