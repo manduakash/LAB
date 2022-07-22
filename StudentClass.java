@@ -3,7 +3,7 @@
 package Lab;
 
 
-public class StudentClass{		// main class
+public class Lab27_Q4_StudentClass{		// main class
 	//declaring instance varibles
 	int studentNo ;
 	String Name, Mail, Address;
@@ -26,18 +26,16 @@ public class StudentClass{		// main class
 	}
 	
 	//method for printing output
-	void display() {							//for concation and SOP the output
-		if(increasedFees != 0) {					//updating fees before printing
-			this.fees=this.fees+increasedFees;			//assigning value after updating fees
-		}
+	void display() {							//for concation and SOP the output				
+		this.fees=this.fees+increasedFees;				//updating fees before printing
 		System.out.println("Id-" +this.studentNo+ " 	Name-" +this.Name+ " 	Mail-" +this.Mail+ " 	Address-" +this.Address + " 	Fees-" +fees);
 	}
 	
 	//increasing fees method
 	static void increaseFees(int n, double f) {
-		if(f<2000) {			// condition 
-			f=10*f/100;		// logic for increasing fees
-			increasedFees=f;	//assigning the to static instance member 		
+		if(f<2000) {							// condition 
+			f=10*f/100;						// logic for increasing fees
+			increasedFees=f;					//assigning the to static instance member 		
 		}
 	}
 	
@@ -71,7 +69,7 @@ public class StudentClass{		// main class
 		//traversing the array of student objects
 		System.out.println("_____________________________Details of Students_______________________________\n");
 		for(StudentClass i:student) {
-			i.display();
+			i.display();					//traversing with invocation of display
 		}
 		
 		
