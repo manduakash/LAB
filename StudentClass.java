@@ -3,12 +3,12 @@
 package Lab;
 
 
-public class StudentClass{		// class
+public class StudentClass{		// main class
 	//declaring instance varibles
 	int studentNo ;
 	String Name, Mail, Address;
 	double fees;
-	static double increasedFees;	// static member for increaseFees method
+	static double increasedFees;						// static member for increaseFees method
 	
 	
 	//creating constructor for asssing the details to student
@@ -21,14 +21,14 @@ public class StudentClass{		// class
 	
 	//method for initializing fees to student 
 	void fees(double f) {	
-		fees=f;		// assigning passing value
+		fees=f;								// assigning passing value
 		
 	}
 	
 	//method for printing output
-	void display() {	// for concation and SOP the output
-		if(increasedFees != 0) {	//updating fees before printing
-			this.fees=this.fees+increasedFees;	//assigning value after updating fees
+	void display() {							//for concation and SOP the output
+		if(increasedFees != 0) {					//updating fees before printing
+			this.fees=this.fees+increasedFees;			//assigning value after updating fees
 		}
 		System.out.println("Id-" +this.studentNo+ " 	Name-" +this.Name+ " 	Mail-" +this.Mail+ " 	Address-" +this.Address + " 	Fees-" +fees);
 	}
