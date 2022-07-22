@@ -35,7 +35,7 @@ public class Lab27_Q4_StudentClass{		// main class
 	static void increaseFees(int n, double f) {
 		if(f<2000) {							// condition 
 			f=10*f/100;						// logic for increasing fees
-			increasedFees=f;					//assigning the to static instance member 		
+			increasedFees=f;					//assigning the value to static instance member 		
 		}
 	}
 	
@@ -46,7 +46,7 @@ public class Lab27_Q4_StudentClass{		// main class
 		//instantiatind Student type of array and declaring size
 		StudentClass[] student = new StudentClass[5];
 		
-		//creating objects of StudentClass and initializing into array
+		//Instantiating objects of StudentClass and initializing into array
 		student[0]= new StudentClass(101,"Akash","akash@gmail.com","Somewhere, Bihar");
 		student[1]= new StudentClass(102,"Sayan","Sayan@gmail.com","Somewhere, West Bengal");
 		student[2]= new StudentClass(103,"Sagnik","Sagnik@gmail.com","Somewhere, West Bengal");
