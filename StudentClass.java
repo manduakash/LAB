@@ -3,7 +3,7 @@
 package Lab;
 
 
-public class Lab27july_Q4_StudentClass{		// main class
+public class StudentClass{		// main class
 	//declaring instance varibles
 	int studentNo ;
 	String Name, Mail, Address;
