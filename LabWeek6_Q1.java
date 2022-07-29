@@ -8,8 +8,8 @@ public class LabWeek6_Q1 {
 	//main method
 	public static void main(String[] args) { 
 		
-		//Problem statement 1:
-		System.out.println("Problem statement 1:");
+		//PROBLEM STATEMENT 1:
+		System.out.println("\nPROBLEM STATEMENT 1:");
 		//creating a string object 
 		String str = "Welcome to Java World";
 			
@@ -27,8 +27,8 @@ public class LabWeek6_Q1 {
 	
 		System.out.println("Lowercasing of str:- "+ str.toLowerCase()); 		// lowercase of "str" 
 	
-		//Problem statement 2:
-		System.out.println("Problem statement 2:");
+		//PROBLEM STATEMENT 2:
+		System.out.println("\nPROBLEM STATEMENT 2:");
 	
 		StringBuffer sb = new StringBuffer("This is StringBuffer ");					// instantiating stringBuffer object
 		
@@ -41,8 +41,8 @@ public class LabWeek6_Q1 {
 		System.out.println(sb.replace(14, 20, "Builder"));	
 	
 		
-		//Problem statement 3:
-		System.out.println("Problem statement 3:");
+		//PROBLEM STATEMENT 3:
+		System.out.println("\nPROBLEM STATEMENT 3:");
 		
 		//creating a string object
 		String str1 = "C:\\IBM\\DB2\\PROGRAM\\DB2COPY1.EXE"; 			// using double back slaces for escape sequence
