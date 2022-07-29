@@ -9,17 +9,17 @@ import java.util.regex.Pattern;
 
 class MyRegex2{
 	
-	void lowerUnderscore(String input) {	// static method for checking ip 
+	void lowerUnderscore(String input) {						// static method for checking ip 
 	
 	//this is regex pattern for checking ip address
-	String pattern = "[a-z]+_[a-z]+";					     //regex pattern for this problem
+	String pattern = "[a-z]+_[a-z]+";					 	//regex pattern for this problem
 	
-	Pattern p = Pattern.compile(pattern);				     // passing regex pattern into comile method of static pattern class 
-	Matcher m = p.matcher(input);						    // matching ip agrguments to regex pattern
+	Pattern p = Pattern.compile(pattern);				     		// passing regex pattern into comile method of static pattern class 
+	Matcher m = p.matcher(input);						       // matching ip agrguments to regex pattern
 			
-	if(m.matches() == true) {								// if pattern matches then it will return true 
+	if(m.matches() == true) {						      // if pattern matches then it will return true 
 		System.out.println("Found a match...\n");
-	}else {													// if pattern doesnt match then it will exicute else part
+	}else {									      // if pattern doesnt match then it will exicute else part
 		System.out.println("Not match...\n");				
 	}
 	
@@ -27,7 +27,7 @@ class MyRegex2{
   }
 }
 
-public class LabWeek6_Q5 {
+public class LabWeek6_Q3 {
 		//main method
 		public static void main(String[] args) {
 			//instantiating objects
