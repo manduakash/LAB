@@ -29,7 +29,7 @@ class MyRegex{
   }
 }
 
-public class LabWeek6_Q4 {
+public class LabWeek6_Q2 {
 	
 	//main method
 	public static void main(String[] args) {
