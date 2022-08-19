@@ -17,7 +17,7 @@ public class BookStore {	//main class
 	public void searchByTitle(String title) {		//passing title string as argument to search
 		for (Book b : bookList) {
 			if(title.contains(b.title)) {			//condition
-				System.out.println(b); //if condition meets
+				System.out.println("bookID="+b.bookID+ " title="+b.title+" author="+b.author+" category="+b.category+ " price="+b.price); //if condition meets
 				break;
 			}else {
 				System.out.println("not found");
@@ -30,7 +30,7 @@ public class BookStore {	//main class
 	public void searchByAuthor(String author) {		//passing author string as argument to search
 		for (Book b : bookList) {
 			if(author.contains(b.author)) {			//condition
-				System.out.println(b); //if condition meets
+				System.out.println("bookID="+b.bookID+ " title="+b.title+" author="+b.author+" category="+b.category+ " price="+b.price); //if condition meets
 				break;
 			}else {
 				System.out.println("not found");
