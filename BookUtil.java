@@ -10,7 +10,8 @@ import com.book.BookStore;
 public class BookUtil {
 	public static void main(String[] args){							//main method
 		BookStore obj = new BookStore();								//instantiating BookStore object
-		Scanner s = new Scanner(System.in);								//instantiating scanner object
+		Scanner s  = new Scanner(System.in);								//instantiating scanner object
+		
 		
 		
 //		System.out.println("Enter how many books you want to add:");
@@ -21,29 +22,42 @@ public class BookUtil {
 		
 		System.out.println("For book-"+i);
 		System.out.println("Enter bookID:");
-		String bookID = s.nextLine();									//taking input for bookID
+		Scanner scanBookID  = new Scanner(System.in);								//instantiating scanner object
+		String bookID = scanBookID.nextLine();									//taking input for bookID
+		
 		System.out.println("Enter title:");
-		String title = s.nextLine();									//taking input for title
+		Scanner scanTitle  = new Scanner(System.in);								//instantiating scanner object
+		String title = scanTitle.nextLine();									//taking input for title
+		
 		System.out.println("Enter author:");
-		String author = s.nextLine();									//taking input for author
+		Scanner scanAuthor  = new Scanner(System.in);								//instantiating scanner object
+		String author = scanAuthor.nextLine();									//taking input for author
+		
 		System.out.println("Enter category:");
-		String category = s.nextLine();									//taking input for category
+		Scanner scanCategory  = new Scanner(System.in);								//instantiating scanner object
+		String category = scanCategory.nextLine();									//taking input for category
+		
 		System.out.println("Enter price:");
-		float price = s.nextFloat();									//taking input for price
+		Scanner scanPrice  = new Scanner(System.in);								//instantiating scanner object
+		float price = scanPrice.nextFloat();									//taking input for price
 												
 		
 		obj.addBook(new Book(bookID,title,author,category,price));		//adding Book instances into BookStore
-		System.out.println("\n"); 											
-		}
+		obj.displayAll(); 	
+
+		}	//for loop end
 	
 		System.out.println("Enter title to search book: ");
 		String title = s.nextLine();									//taking input for price
+		System.out.println("searched by title");
 		obj.searchByTitle(title);										//searching book by book title 
 		
 		System.out.println("Enter author name to search book");
 		String author = s.nextLine();									//taking input for price
+		System.out.println("searched by author");
 		obj.searchByAuthor(author);										//searching book by author name
 		
+		System.out.println("printing all books:");
 		obj.displayAll(); 												//displaying all books with details
 		
 		s.close(); 														//closing input stream
