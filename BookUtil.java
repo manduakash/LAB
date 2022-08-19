@@ -17,7 +17,7 @@ public class BookUtil {
 //		System.out.println("Enter how many books you want to add:");
 //		int n = s.nextInt();
 
-		for(int i=1; i<=3; i++) {										//running for loop three times to add 3 book instances
+		for(int i=1; i<=1; i++) {										//running for loop three times to add 3 book instances
 		//taking inputs from user 
 		
 		System.out.println("For book-"+i);
@@ -43,8 +43,17 @@ public class BookUtil {
 												
 		
 		obj.addBook(new Book(bookID,title,author,category,price));		//adding Book instances into BookStore
-		obj.displayAll(); 	
-
+		obj.displayAll(); 
+		
+		if(i!=2) {	//condition for close scanner input stream
+			continue;
+		}
+		//closing all scanner input streams
+		scanBookID.close();
+		scanTitle.close();
+		scanAuthor.close();
+		scanCategory.close();
+		scanPrice.close();
 		}	//for loop end
 	
 		System.out.println("Enter title to search book: ");
