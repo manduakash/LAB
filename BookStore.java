@@ -17,7 +17,7 @@ public class BookStore {	//main class
 	public void searchByTitle(String title) {		//passing title string as argument to search
 		for (Book b : bookList) {
 			if(title.contains(b.title)) {			//condition
-				System.out.println("bookID="+b.bookID+ " title="+b.title+" author="+b.author+" category="+b.category+ " price="+b.price+"\n"); //if condition meets
+				System.out.println("bookID="+b.bookID+ " title="+b.title+" author="+b.author+" category="+b.category+ " price="+b.price); //if condition meets
 				break;
 			}else {
 				System.out.println("not found");
@@ -43,7 +43,7 @@ public class BookStore {	//main class
 	public void displayAll() {						//displayAll method with traverse and print all the elements of bookList collection
 		//traversing
 		for(Book b : bookList) {					//enhanced foreach loop
-			System.out.println("bookID="+b.bookID+ " title="+b.title+" author="+b.author+" category="+b.category+ " price="+b.price+"\n");
+			System.out.println("bookID="+b.bookID+ " title="+b.title+" author="+b.author+" category="+b.category+ " price="+b.price);
 		}
 	}
 }
