@@ -49,15 +49,15 @@ public class BookUtil {
 	
 		System.out.println("Enter title to search book: ");
 		String title = s.nextLine();									//taking input for price
-		System.out.println("searched by title");
+		System.out.println("\nSearched by title");
 		obj.searchByTitle(title);										//searching book by book title 
 		
 		System.out.println("Enter author name to search book");
 		String author = s.nextLine();									//taking input for price
-		System.out.println("searched by author");
+		System.out.println("\nSearched by author");
 		obj.searchByAuthor(author);										//searching book by author name
 		
-		System.out.println("printing all books:");
+		System.out.println("\nPrinting all books:");
 		obj.displayAll(); 												//displaying all books with details
 		
 		s.close(); 														//closing input stream
