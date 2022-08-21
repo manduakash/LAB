@@ -27,7 +27,7 @@ public class Book {	//main class
 				this.category=category;	//if condition meet
 			}
 			else {
-				throw new InvalidBookException("category should be Science,Fiction and Others");		//throws exception
+				throw new InvalidBookException("category should be Science,Fiction,Technology and Others");	//throws exception
 			}
 			
 			//conditon for price	
