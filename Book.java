@@ -3,19 +3,19 @@
 
 package com.book;
 
-public class Book {	//main class
+public class Book {//main book class
 	
 	//encapsulating all data members
 	private String bookID, title, author, category;
 	private float price;
 	
-	public Book(String bookID, String title, String author, String category, float price)  {	//parameterized constructor
+	public Book(String bookID, String title, String author, String category, float price)  {//parameterized constructor
 		
 		//validations
 		try {
 			//conditon for bookID	
-			if((bookID.charAt(0)=='B') && (bookID.length()==4)) {	//conditon
-				this.bookID=bookID;	//if condition meet
+			if((bookID.startsWith("B") && (bookID.length()==4)) {	//condition
+				this.bookID=bookID;	//if condition meets
 			}
 			else {
 				throw new InvalidBookException("book id should be start with 'B' and lenght of 4");		//throws exception
@@ -24,7 +24,7 @@ public class Book {	//main class
 			
 			//conditon for category	
 			if((category.equalsIgnoreCase("Science")) || (category.equalsIgnoreCase("Fiction")) || (category.equalsIgnoreCase("Technology")) || (category.equalsIgnoreCase("Others"))) {	//conditon
-				this.category=category;	//if condition meet
+				this.category=category;	//if condition meets
 			}
 			else {
 				throw new InvalidBookException("category should be Science,Fiction,Technology and Others");	//throws exception
@@ -32,7 +32,7 @@ public class Book {	//main class
 			
 			//conditon for price	
 			if(price>0) {	//conditon
-				this.price=price; //if condition meet
+				this.price=price; //if condition meets
 			}
 			else {
 				throw new InvalidBookException("negative price can not be accepted");				//throws exception
